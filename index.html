@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bengkel Motor Mas Jalal | Servis Motor Semarang</title>
-  <meta name="description" content="Bengkel Motor Mas Jalal melayani servis ringan, ganti oli, tune-up, dan perawatan motor terbaik di Semarang. Booking mudah via WhatsApp.">
+  <title>Bengkel Motor Mas Djalal | Servis Motor Semarang</title>
+  <meta name="description" content="Bengkel Motor Mas Djalal melayani servis ringan, ganti oli, tune-up, dan perawatan motor terbaik di Semarang. Booking mudah via WhatsApp.">
+  <meta name="keywords" content="bengkel motor, Semarang, servis motor, tune-up, ganti oli, bengkel Mas Jalal">
+  <meta name="author" content="Bengkel Mas Djalal">
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <style>
@@ -104,8 +106,8 @@
 </head>
 <body>
   <header>
-    <h1>Bengkel Motor Mas Jalal</h1>
-    <p>Servis Motor Cepat & Terpercaya di Semarang</p>
+    <h1>Bengkel Motor Mas Djalal</h1>
+    <p>Servis Motor Terbaik & Terpercaya di Semarang</p>
   </header>
 
   <section class="hero">
@@ -115,30 +117,16 @@
   </section>
 
   <section class="section">
-    <div class="service">
-      <h2>🔧 Servis Ringan</h2>
-      <p>Servis cepat & ringan agar motor tetap prima di jalan.</p>
-      <img src="/images/Screenshot 2025-06-18 110746.png" alt="Servis ringan">
-    </div>
-    <div class="service">
-      <h2>🛢️ Ganti Oli</h2>
-      <p>Pakai oli terbaik, mesin lebih adem dan tahan lama.</p>
-      <img src="/images/Screenshot 2025-06-18 110929.png" alt="Ganti oli">
-    </div>
-    <div class="service">
-      <h2>⚙️ Tune-Up Mesin</h2>
-      <p>Tarikan terasa berat? Saatnya tune-up biar tenaga balik lagi!</p>
-      <img src="/images/Screenshot 2025-06-18 111123.png" alt="Tune-up mesin">
-    </div>
-    <div class="service">
-      <h2>🛞 Servis Rem & Kampas</h2>
-      <p>Rem pakem, berkendara lebih aman dan nyaman.</p>
-      <img src="/images/Screenshot 2025-06-18 111229.png" alt="Servis rem & kampas">
-    </div>
-    <div class="service">
-      <h2>🔩 Servis Rutin & Umum</h2>
-      <p>Layanan menyeluruh untuk motor harian & touring Anda.</p>
-      <img src="/images/Screenshot 2025-06-18 111301.png" alt="Servis rutin">
+    <h2>🖼️ Galeri Bengkel</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/images/Screenshot 2025-06-18 110746.png" alt="Servis ringan"></div>
+        <div class="swiper-slide"><img src="/images/Screenshot 2025-06-18 110929.png" alt="Ganti oli"></div>
+        <div class="swiper-slide"><img src="/images/Screenshot 2025-06-18 111123.png" alt="Tune-up mesin"></div>
+        <div class="swiper-slide"><img src="/images/Screenshot 2025-06-18 111229.png" alt="Servis rem & kampas"></div>
+        <div class="swiper-slide"><img src="/images/Screenshot 2025-06-18 111301.png" alt="Servis rutin"></div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
@@ -149,10 +137,34 @@
         <div class="swiper-slide"><blockquote>"Motor saya sekarang jauh lebih enak dipakai setelah tune-up di Mas Jalal. Pengerjaannya cepat!"</blockquote><p>– Andi, Semarang Barat</p></div>
         <div class="swiper-slide"><blockquote>"Langganan ganti oli di sini, harga jujur dan pelayanan ramah."</blockquote><p>– Sari, Gajahmungkur</p></div>
         <div class="swiper-slide"><blockquote>"Waktu darurat mogok di jalan, langsung dibantu servis di tempat. Keren banget!"</blockquote><p>– Budi, Tembalang</p></div>
+       <div class="swiper-slide"><blockquote>"Terima kasih buat bengkel mas djalal, semisal bengkel tidak punya cadangan coolant radiator, mungkin, mungkin, motor saya sudah jebol karena overheat kehabisan coolant."</blockquote><p>– Kiky, Semarang</p></div>
+      <div class="swiper-slide"><blockquote>"Pelayanan yg memuaskan, bisa konsultasi dulu, hasil nya bagus, ga nyesel service di sini."</blockquote><p>– Guntur, Menteri Supeno</p></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
+
+  <section class="section">
+  <h2>📅 Booking Jadwal Servis</h2>
+  <p>Isi formulir berikut untuk langsung chat dengan kami via WhatsApp:</p>
+  <form onsubmit="event.preventDefault(); sendToWhatsApp();">
+    <input type="text" id="nama" placeholder="Nama Anda" required style="padding:10px;width:100%;margin-bottom:10px;">
+    <input type="text" id="motor" placeholder="Jenis Motor" required style="padding:10px;width:100%;margin-bottom:10px;">
+    <input type="text" id="keluhan" placeholder="Keluhan Kendaraan" required style="padding:10px;width:100%;margin-bottom:10px;">
+    <button type="submit" class="btn">Kirim via WhatsApp</button>
+  </form>
+</section>
+
+<script>
+function sendToWhatsApp() {
+  const nama = document.getElementById("nama").value;
+  const motor = document.getElementById("motor").value;
+  const keluhan = document.getElementById("keluhan").value;
+  const pesan = `Hai kak selamat datang di Bengkel Motor Mas Djalal, silahkan sampaikan keluhan kendaraan anda.%0A%0ANama: ${nama}%0AJenis Motor: ${motor}%0AKeluhan: ${keluhan}`;
+  const url = `https://wa.me/628993992095?text=${pesan}`;
+  window.open(url, '_blank');
+}
+</script>
 
   <section class="section">
     <h2>📍 Lokasi Bengkel</h2>
@@ -165,7 +177,6 @@
     <p>&copy; 2025 Bengkel Motor Mas Jalal</p>
   </footer>
 
-  <!-- WhatsApp Chat Bubble -->
   <a class="wa-bubble" href="https://wa.me/628993992095" target="_blank" title="Chat via WhatsApp">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA Chat">
   </a>
