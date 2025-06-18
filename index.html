@@ -3,84 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bengkel Motor Mas Djalal | Servis Motor Semarang</title>
-  <meta name="description" content="Bengkel Motor Mas Djalal melayani servis ringan, ganti oli, tune-up, dan perawatan motor terbaik di Semarang. Booking mudah via WhatsApp.">
+  <title>Bengkel Motor Mas Jalal | Servis Motor Semarang</title>
+  <meta name="description" content="Bengkel Motor Mas Jalal melayani servis ringan, ganti oli, tune-up, dan perawatan motor terbaik di Semarang. Booking mudah via WhatsApp.">
   <meta name="keywords" content="bengkel motor, Semarang, servis motor, tune-up, ganti oli, bengkel Mas Jalal">
-  <meta name="author" content="Bengkel Mas Djalal">
+  <meta name="author" content="Bengkel Mas Jalal">
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+
   <style>
     :root {
-      --bg-light: #f9f9f9;
-      --bg-dark: #111;
-      --text-light: #fff;
-      --text-dark: #222;
+      --bg-light: #1c1c1c;
+      --bg-dark: #000;
+      --text-light: #f1f1f1;
+      --text-dark: #111;
       --primary: #ffcc00;
-      --accent: #25D366;
+      --accent: #e53935;
     }
 
     body {
-      font-family: sans-serif;
+      font-family: 'Orbitron', sans-serif;
       margin: 0;
       padding: 0;
       background-color: var(--bg-light);
-      color: var(--text-dark);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: var(--bg-dark);
-        color: var(--text-light);
-      }
-      header, footer {
-        background-color: #000;
-        color: #fff;
-      }
-      .btn {
-        background-color: #fff;
-        color: #000;
-      }
+      color: var(--text-light);
     }
 
     header, footer {
-      background: var(--text-dark);
+      background: var(--bg-dark);
       color: var(--text-light);
       text-align: center;
       padding: 20px;
     }
+
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: var(--primary);
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     .hero {
       background: var(--primary);
+      color: #000;
       padding: 40px 20px;
       text-align: center;
     }
-    .hero h1 { margin: 0; font-size: 2em; }
-    .btn {
-      background: var(--text-dark);
-      color: var(--text-light);
-      padding: 10px 20px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      border-radius: 6px;
+
+    .hero h1 {
+      margin: 0;
+      font-size: 2.2em;
     }
+
+    .btn {
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
     .section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
+
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
     .service {
-      background: #fff;
+      background: #222;
       border-radius: 8px;
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     }
-    .service img {
-      width: 100%;
+
+    iframe {
       border-radius: 8px;
-      margin-top: 10px;
+      width: 100%;
     }
-    iframe { border-radius: 8px; width: 100%; }
 
     .wa-bubble {
       position: fixed;
@@ -98,17 +110,31 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       z-index: 1000;
     }
+
     .wa-bubble img {
       width: 35px;
       height: 35px;
     }
+
+    input, button {
+      font-family: inherit;
+    }
   </style>
 </head>
+
 <body>
+
   <header>
-    <h1>Bengkel Motor Mas Djalal</h1>
-    <p>Servis Motor Terbaik & Terpercaya di Semarang</p>
+    <h1>Bengkel Motor Mas Jalal</h1>
+    <p>Servis Motor Cepat & Terpercaya di Semarang</p>
   </header>
+
+  <nav>
+    <a href="#galeri">Galeri</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#booking">Booking</a>
+    <a href="#lokasi">Lokasi</a>
+  </nav>
 
   <section class="hero">
     <h1>Perawatan Motor Harian Anda</h1>
@@ -116,59 +142,46 @@
     <a class="btn" href="https://wa.me/628993992095" target="_blank">Booking via WhatsApp</a>
   </section>
 
-  <section class="section">
+  <section id="galeri" class="section">
     <h2>🖼️ Galeri Bengkel</h2>
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/images/Servis ringan.png" alt="Servis ringan"></div>
-        <div class="swiper-slide"><img src="/images/Ganti oli.png" alt="Ganti oli"></div>
-        <div class="swiper-slide"><img src="/images/Tune-up mesin.png" alt="Tune-up mesin"></div>
-        <div class="swiper-slide"><img src="/images/Servis rem & kampas.png" alt="Servis rem & kampas"></div>
-        <div class="swiper-slide"><img src="/images/SServis rutin.png" alt="Servis rutin"></div>
+        <div class="swiper-slide"><img src="/images/servis-ringan.png" alt="Servis ringan"></div>
+        <div class="swiper-slide"><img src="/images/ganti-oli.png" alt="Ganti oli"></div>
+        <div class="swiper-slide"><img src="/images/tune-up.png" alt="Tune-up mesin"></div>
+        <div class="swiper-slide"><img src="/images/rem-kampas.png" alt="Servis rem & kampas"></div>
+        <div class="swiper-slide"><img src="/images/servis-rutin.png" alt="Servis rutin"></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <section class="section">
+  <section id="testimoni" class="section">
     <h2>💬 Testimoni Pelanggan</h2>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><blockquote>"Motor saya sekarang jauh lebih enak dipakai setelah tune-up di Mas Jalal. Pengerjaannya cepat!"</blockquote><p>– Andi, Semarang Barat</p></div>
         <div class="swiper-slide"><blockquote>"Langganan ganti oli di sini, harga jujur dan pelayanan ramah."</blockquote><p>– Sari, Gajahmungkur</p></div>
         <div class="swiper-slide"><blockquote>"Waktu darurat mogok di jalan, langsung dibantu servis di tempat. Keren banget!"</blockquote><p>– Budi, Tembalang</p></div>
-       <div class="swiper-slide"><blockquote>"Terima kasih buat bengkel mas djalal, semisal bengkel tidak punya cadangan coolant radiator, mungkin, mungkin, motor saya sudah jebol karena overheat kehabisan coolant."</blockquote><p>– Kiky, Semarang</p></div>
-      <div class="swiper-slide"><blockquote>"Pelayanan yg memuaskan, bisa konsultasi dulu, hasil nya bagus, ga nyesel service di sini."</blockquote><p>– Guntur, Menteri Supeno</p></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <section class="section">
-  <h2>📅 Booking Jadwal Servis</h2>
-  <p>Isi formulir berikut untuk langsung chat dengan kami via WhatsApp:</p>
-  <form onsubmit="event.preventDefault(); sendToWhatsApp();">
-    <input type="text" id="nama" placeholder="Nama Anda" required style="padding:10px;width:100%;margin-bottom:10px;">
-    <input type="text" id="motor" placeholder="Jenis Motor" required style="padding:10px;width:100%;margin-bottom:10px;">
-    <input type="text" id="keluhan" placeholder="Keluhan Kendaraan" required style="padding:10px;width:100%;margin-bottom:10px;">
-    <button type="submit" class="btn">Kirim via WhatsApp</button>
-  </form>
-</section>
+  <section id="booking" class="section">
+    <h2>📅 Booking Jadwal Servis</h2>
+    <p>Isi formulir berikut dan kami arahkan ke WhatsApp:</p>
+    <form onsubmit="event.preventDefault(); sendToWhatsApp();">
+      <input type="text" id="nama" placeholder="Nama Anda" required style="padding:10px;width:100%;margin-bottom:10px;">
+      <input type="text" id="motor" placeholder="Jenis Motor" required style="padding:10px;width:100%;margin-bottom:10px;">
+      <input type="text" id="keluhan" placeholder="Keluhan Kendaraan" required style="padding:10px;width:100%;margin-bottom:10px;">
+      <button type="submit" class="btn">Kirim via WhatsApp</button>
+    </form>
+  </section>
 
-<script>
-function sendToWhatsApp() {
-  const nama = document.getElementById("nama").value;
-  const motor = document.getElementById("motor").value;
-  const keluhan = document.getElementById("keluhan").value;
-  const pesan = `Hai kak selamat datang di Bengkel Motor Mas Djalal, silahkan sampaikan keluhan kendaraan anda.%0A%0ANama: ${nama}%0AJenis Motor: ${motor}%0AKeluhan: ${keluhan}`;
-  const url = `https://wa.me/628993992095?text=${pesan}`;
-  window.open(url, '_blank');
-}
-</script>
-
-  <section class="section">
+  <section id="lokasi" class="section">
     <h2>📍 Lokasi Bengkel</h2>
-    <p>Jl. Ngaglik Baru No.09, RW.2, Bendungan, Kec. Gajahmungkur, Kota Semarang, Jawa Tengah 50231</p>
+    <p>Jl. Ngaglik Baru No.09, Bendungan, Gajahmungkur, Semarang</p>
     <iframe src="https://www.google.com/maps?q=Jl.+Ngaglik+Baru+No.09,+Bendungan,+Semarang&output=embed" height="300" allowfullscreen></iframe>
   </section>
 
@@ -188,6 +201,17 @@ function sendToWhatsApp() {
       pagination: { el: '.swiper-pagination' },
       autoplay: { delay: 4000 },
     });
+
+    function sendToWhatsApp() {
+      const nama = document.getElementById("nama").value;
+      const motor = document.getElementById("motor").value;
+      const keluhan = document.getElementById("keluhan").value;
+      const pesan = `Hai kak, saya ingin booking servis motor:%0A%0ANama: ${nama}%0AJenis Motor: ${motor}%0AKeluhan: ${keluhan}`;
+      const url = `https://wa.me/628993992095?text=${pesan}`;
+      alert("Terima kasih! Anda akan diarahkan ke WhatsApp untuk menyelesaikan booking.");
+      window.open(url, '_blank');
+    }
   </script>
+
 </body>
 </html>
