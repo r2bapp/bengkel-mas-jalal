@@ -1,71 +1,182 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bengkel Motor Mas Jalal | Servis Motor Semarang</title>
-    <meta name="description" content="Bengkel Motor Mas Jalal melayani servis ringan, ganti oli, tune-up, dan perawatan motor terbaik di Semarang. Booking mudah via WhatsApp.">
-    <meta property="og:title" content="Bengkel Motor Mas Jalal">
-    <meta property="og:description" content="Servis cepat & terpercaya untuk motor harian Anda di Semarang.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bengkelmasjalal.netlify.app">
-    <meta property="og:image" content="https://bengkelmasjalal.netlify.app/og-image.jpg">
-    <link rel="icon" href="favicon.ico">
-    <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; }
-        header { background: #222; color: #fff; padding: 20px; text-align: center; }
-        .hero { background: #ffcc00; padding: 40px 20px; text-align: center; }
-        .hero h1 { margin: 0; font-size: 2em; }
-        .hero p { margin: 10px 0; }
-        .btn { background: #222; color: #fff; padding: 10px 20px; text-decoration: none; display: inline-block; margin-top: 10px; }
-        .section { padding: 40px 20px; max-width: 800px; margin: auto; }
-        .service { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-        footer { text-align: center; background: #222; color: #fff; padding: 20px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bengkel Motor Mas Jalal | Servis Motor Semarang</title>
+  <meta name="description" content="Bengkel Motor Mas Jalal melayani servis ringan, ganti oli, tune-up, dan perawatan motor terbaik di Semarang. Booking mudah via WhatsApp.">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    :root {
+      --bg-light: #f9f9f9;
+      --bg-dark: #111;
+      --text-light: #fff;
+      --text-dark: #222;
+      --primary: #ffcc00;
+      --accent: #25D366;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+      }
+      header, footer {
+        background-color: #000;
+        color: #fff;
+      }
+      .btn {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+
+    header, footer {
+      background: var(--text-dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+    }
+    .hero {
+      background: var(--primary);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0; font-size: 2em; }
+    .btn {
+      background: var(--text-dark);
+      color: var(--text-light);
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .service {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .service img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    iframe { border-radius: 8px; width: 100%; }
+
+    .wa-bubble {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--accent);
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .wa-bubble img {
+      width: 35px;
+      height: 35px;
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <h1>Bengkel Motor Mas Jalal</h1>
     <p>Servis Motor Cepat & Terpercaya di Semarang</p>
-</header>
+  </header>
 
-<section class="hero">
+  <section class="hero">
     <h1>Perawatan Motor Harian Anda</h1>
     <p>Layanan servis ringan, tune-up, dan ganti oli. Booking sekarang!</p>
     <a class="btn" href="https://wa.me/628993992095" target="_blank">Booking via WhatsApp</a>
-</section>
+  </section>
 
-<section class="section">
+  <section class="section">
     <div class="service">
-        <h2>🔧 Servis Ringan</h2>
-        <p>Servis cepat & ringan agar motor tetap prima di jalan.</p>
+      <h2>🔧 Servis Ringan</h2>
+      <p>Servis cepat & ringan agar motor tetap prima di jalan.</p>
+      <img src="/images/Screenshot 2025-06-18 110746.png" alt="Servis ringan">
     </div>
     <div class="service">
-        <h2>🛢️ Ganti Oli</h2>
-        <p>Pakai oli terbaik, mesin lebih adem dan tahan lama.</p>
+      <h2>🛢️ Ganti Oli</h2>
+      <p>Pakai oli terbaik, mesin lebih adem dan tahan lama.</p>
+      <img src="/images/Screenshot 2025-06-18 110929.png" alt="Ganti oli">
     </div>
     <div class="service">
-        <h2>⚙️ Tune-Up Mesin</h2>
-        <p>Tarikan terasa berat? Saatnya tune-up biar tenaga balik lagi!</p>
+      <h2>⚙️ Tune-Up Mesin</h2>
+      <p>Tarikan terasa berat? Saatnya tune-up biar tenaga balik lagi!</p>
+      <img src="/images/Screenshot 2025-06-18 111123.png" alt="Tune-up mesin">
     </div>
     <div class="service">
-        <h2>🛞 Servis Rem & Kampas</h2>
-        <p>Rem pakem, berkendara lebih aman dan nyaman.</p>
+      <h2>🛞 Servis Rem & Kampas</h2>
+      <p>Rem pakem, berkendara lebih aman dan nyaman.</p>
+      <img src="/images/Screenshot 2025-06-18 111229.png" alt="Servis rem & kampas">
     </div>
-</section>
+    <div class="service">
+      <h2>🔩 Servis Rutin & Umum</h2>
+      <p>Layanan menyeluruh untuk motor harian & touring Anda.</p>
+      <img src="/images/Screenshot 2025-06-18 111301.png" alt="Servis rutin">
+    </div>
+  </section>
 
-<section class="section">
+  <section class="section">
+    <h2>💬 Testimoni Pelanggan</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><blockquote>"Motor saya sekarang jauh lebih enak dipakai setelah tune-up di Mas Jalal. Pengerjaannya cepat!"</blockquote><p>– Andi, Semarang Barat</p></div>
+        <div class="swiper-slide"><blockquote>"Langganan ganti oli di sini, harga jujur dan pelayanan ramah."</blockquote><p>– Sari, Gajahmungkur</p></div>
+        <div class="swiper-slide"><blockquote>"Waktu darurat mogok di jalan, langsung dibantu servis di tempat. Keren banget!"</blockquote><p>– Budi, Tembalang</p></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="section">
     <h2>📍 Lokasi Bengkel</h2>
     <p>Jl. Ngaglik Baru No.09, RW.2, Bendungan, Kec. Gajahmungkur, Kota Semarang, Jawa Tengah 50231</p>
-    <iframe src="https://www.google.com/maps?q=Jl.+Ngaglik+Baru+No.09,+Bendungan,+Semarang&output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-</section>
+    <iframe src="https://www.google.com/maps?q=Jl.+Ngaglik+Baru+No.09,+Bendungan,+Semarang&output=embed" height="300" allowfullscreen></iframe>
+  </section>
 
-<footer>
+  <footer>
     <p>Hubungi kami: <a href="https://wa.me/628993992095" style="color:#ffcc00;">+62 899-3992-095</a></p>
     <p>&copy; 2025 Bengkel Motor Mas Jalal</p>
-</footer>
+  </footer>
 
+  <!-- WhatsApp Chat Bubble -->
+  <a class="wa-bubble" href="https://wa.me/628993992095" target="_blank" title="Chat via WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA Chat">
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination' },
+      autoplay: { delay: 4000 },
+    });
+  </script>
 </body>
 </html>
